@@ -3,40 +3,102 @@
  <head>
   <meta charset="utf-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Space Colony One</title>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="spacecolony.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  </head>
- <style type="text/css">
-.panel {
-	height: 100%;
-	width: 100%;
-}
-</style>
+
  <body>
-  <h1>SPACE COLONY ONE</h1>
-  <section class="panel">
-	  <h2>PHASE I: Space Colony Park</h2>
+
+  <div id="heading">
+   <div id="heading-banner">
+    <div id="heading-title">SPACE COLONY ONE</div>
+   </div>
+  </div>
+
+  <div class="container">
+
+  <section class="panel" style="width: 100%; border: none; padding: 135px 0px 0px; background: url('panorama.jpg');">
+   <div class="panel-body" style="padding: 15px; background-color: white;">
+     <div style="font-style: italic; font-weight: 600; text-align: center; padding-bottom: 10px;">We embark on a mission to collectively design the colonies to be built in Space within this century</div>
+
+     We believe that Space colonization is the next evolutionary step for humankind and that it is not only trained astronauts and scientists who will participate in it but also everyday people like you and us. We wish to make it as easy as possible for everyone to get involved and shape our future in settlements outside the Earth.
+   </div>
   </section>
+
   <section class="panel">
-	  <h2>PHASE II: Colonies on Earth</h2>
+   <div class="panel-body">
+    <h2>Phase I: Space Colony Park</h2>
+    <p>We start our journey with an amusement park to let people experience the life of future Mars colonists.</p>
+
+    <div id="phase1" class="carousel slide" data-ride="carousel" data-interval="2500">
+     <ol class="carousel-indicators">
+      <li data-target="#phase1" data-slide-to="0" class="active"></li>
+      <li data-target="#phase1" data-slide-to="1"></li>
+      <li data-target="#phase1" data-slide-to="2"></li>
+      <li data-target="#phase1" data-slide-to="3"></li>
+     </ol>
+
+     <div class="carousel-inner">
+      <div class="item active">
+       <img src="transport.jpg">
+       <div class="carousel-caption">
+        <h2>Transport</h2>
+        <p>The VR ride to the colony on Mars starts with launch to Earth orbit with a rocket, followed by travel to Mars orbit with a space ship, and finally descent to the planet surface with a space elevator.</p>
+        <p>You will physically and emotionally immerse in the environment of Mars colonization</p>
+       </div>
+      </div>
+      <div class="item">
+       <img src="habitat.jpg">
+       <div class="carousel-caption">
+        <h2>Habitat</h2>
+        <p>The park offers a tour of the living quarters protecting the colonists from the harsh environment of Mars. The habitat and the living conditions in it are monitored and controlled by the Habitat Computer - an artificial intelligence.</p>
+        <p>You will be assisted by the Habitat Computer on the tour and will learn more about the life-style in a colony on Mars</p>
+       </div>
+      </div>
+      <div class="item">
+       <img src="food.jpg">
+       <div class="carousel-caption">
+        <h2>Food</h2>
+        <p>Eating in the colony includes imports from the Earth supplemented with fresh food grown in the local aquaponics farm.</p>
+        <p>You will help in the garden and taste your own produce of fruits and vegetables</p>
+       </div>
+      </div>
+      <div class="item">
+       <img src="factory.jpg">
+       <div class="carousel-caption">
+        <h2>Factory</h2>
+        <p>Maintenance of the colony is depedent on supplies from the Earth but it has to be performed on site using the local fabrication lab.</p>
+        <p>You will help with maintenance by fabricating a replacement for a broken piece of equipment</p>
+       </div>
+      </div>
+     </div>
+
+     <a class="left carousel-control" href="#phase1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+     <a class="right carousel-control" href="#phase1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+   </div>
   </section>
+
   <section class="panel">
-	  <h2>PHASE III: Colonies in Space</h2>
+   <div class="panel-body">
+    <h2>Phase II: Colonies on Earth</h2>
+   </div>
   </section>
 
-  <script>
-	$(function() {
-		var controller = new ScrollMagic.Controller();
+  <section class="panel">
+   <div class="panel-body">
+    <h2>Phase III: Colonies in Space</h2>
+   </div>
+  </section>
 
-		var slides = document.querySelectorAll("section.panel");
+  <div style="color: LightSteelBlue; text-align: center;">Join us in designing the first Space colony!</div>
 
-		for (var i in slides) {
-			new ScrollMagic.Scene({	triggerElement: slides[i]	}).setPin(slides[i]).addTo(controller);
-		}
-	});
-  </script>
-
+  </div>
  </body>
 </html>

@@ -1,0 +1,121 @@
+
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+#heading {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+#heading-banner {
+  -webkit-flex: 10 0 0; 
+  flex: 10 0 0;
+  background: url("banner.jpg") repeat-x;
+  background-size: auto 100%;
+}
+
+#heading-title {
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  font-weight: 900;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+@media (min-width:500px) {
+  #heading {
+    height: 70px;
+  }
+  #heading-title {
+    font-size: 36px;
+  }
+}
+@media (max-width:499px){
+  #heading {
+    height: 36px;
+  }
+  #heading-title {
+    font-size: 20px;
+  }
+}
+
+.panel {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: 'Audiowide', cursive;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a:link {
+  color: LightSteelBlue;
+  text-decoration: none;
+}
+a:visited {
+  color: LightSteelBlue;
+  text-decoration: none;
+}
+a:hover {
+  color: SteelBlue;
+  text-decoration: underline;
+}
+a:active {
+  color: SteelBlue;
+  text-decoration: underline;
+}
+
+.navigable {
+  padding-right: 40px;
+  background-image: url('../pics/chevron-arrow-right.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.navpath {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.0em;
+  cursor: pointer;
+}
+
+.navpath-separator {
+  margin: 0px 5px;
+  color: gray;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.chosen {
+  background-color: #337ab7;
+  color: white;
+}
+
+.carousel-caption {
+  left: 10%;
+  right: 10%;
+  border-radius: 10px;
+  background-color: #333;
+  opacity: 0.9;
+  padding: 20px;
+  text-align: left;
+}
+.carousel-inner > .item > img {
+  height: 450px;
+  margin: auto;
+}
