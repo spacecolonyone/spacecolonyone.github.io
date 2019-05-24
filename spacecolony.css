@@ -1,7 +1,10 @@
 
 body {
-  margin: 0px;
-  background-color: black;
+  background-image: url("ground.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 #heading {
